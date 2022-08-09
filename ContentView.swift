@@ -17,39 +17,39 @@ struct ContentView: View {
                 VStack {
                     HStack {
                         Text("First")
-                            .frame(width: (geo.size.width/12)*4, height: geo.size.height/4)
+                            .frame(width: geo.size.width/3, height: geo.size.height/4)
                             .background(Color.blue)
                             
                         Text("Second")
-                            .frame(width: (geo.size.width/12)*4, height: geo.size.height/4)
+                            .frame(width: geo.size.width/3, height: geo.size.height/4)
                             .background(Color.green)
                             
                         Text("Third")
-                            .frame(width: (geo.size.width/12)*4, height: geo.size.height/4)
+                            .frame(width: geo.size.width/3, height: geo.size.height/4)
                             .background(Color.gray)
                     }
 
                     HStack {
                         Text("Fourth")
-                            .frame(width: (geo.size.width/12)*6, height: geo.size.height/4)
+                            .frame(width: geo.size.width/2, height: geo.size.height/4)
                             .background(Color.brown)
                         Text("Fifth")
-                            .frame(width: (geo.size.width/12)*6, height: geo.size.height/4)
+                            .frame(width: geo.size.width/2, height: geo.size.height/4)
                             .background(Color.purple)
                     }
                     
                     HStack {
                         Text("Sixth")
-                            .frame(width: (geo.size.width/12)*3, height: geo.size.height/4)
+                            .frame(width: geo.size.width/4, height: geo.size.height/4)
                             .background(Color.indigo)
                         Text("Seven")
-                            .frame(width: (geo.size.width/12)*3, height: geo.size.height/4)
+                            .frame(width: geo.size.width/4, height: geo.size.height/4)
                             .background(Color.yellow)
                         Text("Eight")
-                            .frame(width: (geo.size.width/12)*3, height: geo.size.height/4)
+                            .frame(width: geo.size.width/4, height: geo.size.height/4)
                             .background(Color.mint)
                         Text("Nine")
-                            .frame(width: (geo.size.width/12)*3, height: geo.size.height/4)
+                            .frame(width: geo.size.width/4, height: geo.size.height/4)
                             .background(Color.orange)
                     }
                     
