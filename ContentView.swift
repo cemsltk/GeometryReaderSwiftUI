@@ -9,25 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        VStack {
             GeometryReader { geo in
                 
 //                geo.safeAreaInsets.leading
 //                geo.safeAreaInsets.trailing
                 VStack {
                     HStack {
-                        Text("First")
-                            .frame(width: geo.size.width/3, height: geo.size.height/4)
+                        Text("First \n")
+                            .frame(width: (geo.size.width - 50)/3)
                             .background(Color.blue)
                             
                         Text("Second")
-                            .frame(width: geo.size.width/3, height: geo.size.height/4)
+                            .frame(width: (geo.size.width - 50)/3)
                             .background(Color.green)
                             
                         Text("Third")
-                            .frame(width: geo.size.width/3, height: geo.size.height/4)
+                            .frame(width: (geo.size.width - 50)/3)
                             .background(Color.gray)
-                    }
+                    }.padding(.leading, 20)
+                        .padding(.trailing, 30)
 
                     HStack {
                         Text("Fourth")
@@ -62,7 +63,6 @@ struct ContentView: View {
                 
             }
             .padding(EdgeInsets(top: 10, leading: -15, bottom: 0, trailing: 10))
-            .navigationTitle("Test")
             .background()
             .preferredColorScheme(.dark)
         }
